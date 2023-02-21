@@ -18,5 +18,9 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)triggerAssertionCrash:(UIButton *)sender {
+    NSLog(@"Local Testing - Triggering an assertion crash");
+    assert(NO);
+}
 
 @end
