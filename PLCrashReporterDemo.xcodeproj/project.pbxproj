@@ -17,6 +17,7 @@
 		EC9234C229A50B2700175CF4 /* PLCrashReporterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9234C129A50B2700175CF4 /* PLCrashReporterDemoTests.m */; };
 		EC9234CC29A50B2700175CF4 /* PLCrashReporterDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9234CB29A50B2700175CF4 /* PLCrashReporterDemoUITests.m */; };
 		EC9234CE29A50B2700175CF4 /* PLCrashReporterDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9234CD29A50B2700175CF4 /* PLCrashReporterDemoUITestsLaunchTests.m */; };
+		EC9234DB29A50EBD00175CF4 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9234DA29A50EBD00175CF4 /* CrashReporter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		EC9234C729A50B2700175CF4 /* PLCrashReporterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PLCrashReporterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9234CB29A50B2700175CF4 /* PLCrashReporterDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashReporterDemoUITests.m; sourceTree = "<group>"; };
 		EC9234CD29A50B2700175CF4 /* PLCrashReporterDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashReporterDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		EC9234DA29A50EBD00175CF4 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9234DB29A50EBD00175CF4 /* CrashReporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 		EC92349929A50B2600175CF4 = {
 			isa = PBXGroup;
 			children = (
+				EC9234DA29A50EBD00175CF4 /* CrashReporter.framework */,
 				EC9234A429A50B2600175CF4 /* PLCrashReporterDemo */,
 				EC9234C029A50B2700175CF4 /* PLCrashReporterDemoTests */,
 				EC9234CA29A50B2700175CF4 /* PLCrashReporterDemoUITests */,
@@ -442,6 +446,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PLCrashReporterDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -468,6 +476,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PLCrashReporterDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
